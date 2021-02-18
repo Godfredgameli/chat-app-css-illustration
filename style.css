@@ -1,0 +1,52 @@
+/*Text*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+/*These two colors are the vibrant background colors you see throughout the design and are applied as a linear gradient:
+*/
+/*secondary colors*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+body {
+  font-family: Rubik;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.main-wrapper {
+  width: 100%;
+  height: 97vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.main-wrapper .chat-wrapper {
+  width: 50%;
+  background: linear-gradient(#e942ff, #8838ff);
+  background-size: 50%, 80%;
+}
+
+.main-wrapper .text-wrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-wrapper .text-wrapper header {
+  width: 50%;
+}
+
+.main-wrapper .text-wrapper header h1 {
+  color: #3e2753;
+  font-weight: 700;
+}
+
+.main-wrapper .text-wrapper header p {
+  color: #a39daa;
+}
+/*# sourceMappingURL=style.css.map */
