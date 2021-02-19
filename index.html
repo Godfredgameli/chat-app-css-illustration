@@ -1,60 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-  <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Stay in touch with our dog walkers through the chat interface.
+    This makes it easy to discuss arrangements and make bookings. Once
+    the walk has been completed you can rate your walker and book
+    again all through the chat."
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Godfred Gameli</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
 
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  <main class="main-wrapper">
-    <div class="chat-wrapper">Samuel Green
-      Available to Walk
-    
-      That sounds great. I’d be happy with that.
-    
-      Could you send over some pictures of your dog, please?
-    
-      Here are a few pictures. She’s a happy girl!
-    
-      Can you make it?
-    
-      She looks so happy! The time we discussed works. How long shall I take her out for?
-    
-      30 minute walk
-      $29
-    
-      1 hour walk
-      $49
-    
-      Type a message…</div>
-    <div class="text-wrapper">
-      <header>
-        <h1>Simple booking</h1>
-        <p>Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-          discuss arrangements and make bookings. Once the walk has been completed you can rate 
-          your walker and book again all through the chat.</p>
-      </header>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Godfred Gameli</title>
+  </head>
+  <body>
+    <div class="container-fluid main-wrapper">
+      <div class="row h-100">
+        <div class="col-md h-100 chat-wrapper">
+          <div class="background-gradient"></div>
+          <div class="chat-container h-100">
+            <div class="chat-conversation">
+              <div class="white-panel"></div>
+              <div class="name-section">
+                <div>
+                  <i class="fas fa-chevron-left"></i>
+                  <img src="images/avatar.jpg" alt="" />
+                  <p>
+                    Samuel Green <br />
+                    <span>Available to Walk</span>
+                  </p>
+                  <i class="fas fa-ellipsis-v"></i>
+                </div>
+              </div>
+              <div class="chats">
+                <ul class="chat left">
+                  <li>That sounds great. I’d be happy with that.</li>
+                  <li>
+                    Could you send over some pictures of your dog, please?
+                  </li>
+                </ul>
+                <ul class="chat right">
+                  <li class="dog-pics">
+                    <img src="images/dog-image-1.jpg" alt="dog" />
+                    <img src="images/dog-image-2.jpg" alt="dog" />
+                    <img src="images/dog-image-3.jpg" alt="dog" />
+                  </li>
+                  <li>Here are a few pictures. She’s a happy girl!</li>
+                  <li>Can you make it?</li>
+                </ul>
+                <ul class="chat left">
+                  <li>
+                    She looks so happy! The time we discussed works. How long
+                    shall I take her out for?
+                  </li>
+                </ul>
+                <div class="rates">
+                  <div class="circle"></div>
+                  <div class="charge">30 minute walk <span>$29</span></div>
+                </div>
+                <div class="rates">
+                  <div class="circle"></div>
+                  <div class="charge">1 hour walk <span>$49</span></div>
+                </div>
+                <div class="message">
+                  Type a message…
+                  <span> <i class="fas fa-chevron-circle-right"></i></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md h-100 text-wrapper">
+          <header class="w-50 text-content">
+            <h1>Simple booking</h1>
+            <p>
+              Stay in touch with our dog walkers through the chat interface.
+              This makes it easy to discuss arrangements and make bookings. Once
+              the walk has been completed you can rate your walker and book
+              again all through the chat.
+            </p>
+          </header>
+        </div>
+      </div>
     </div>
-  </main>
-
-  
-
-  
-
-  
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <footer class="attribution">
+      Challenge by
+      <a
+        href="https://www.frontendmentor.io?ref=challenge"
+        target="_blank"
+        rel="noopener"
+        >Frontend Mentor</a
+      >. Coded by
+      <a
+        href="https://www.github.com/Godfredgameli"
+        target="_blank"
+        rel="noopener"
+        >Godfred Gameli</a
+      >.
+    </footer>
+  </body>
 </html>
