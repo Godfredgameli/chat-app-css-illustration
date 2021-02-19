@@ -63,6 +63,9 @@ body{
                     background-color: $light-grayish-violet;
                     border-radius: 20px;
                     z-index: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
                     .white-panel{
                         width: 40%;
                         height: 20px;
@@ -80,7 +83,7 @@ body{
                         margin-top: -15px;
                         height: 10%;
                         background: linear-gradient(to left, $light-magenta, $light-violet) ;
-                        padding: 0 5%;
+                        padding: 10px 5%;
                         color: $white;
                         border-radius: 20px 20px 0 0;
                         div{
@@ -89,7 +92,7 @@ body{
                             justify-content: space-between;
                             align-items: center;
                             margin-top: 25px;
-                            width: 100%;
+                            width: 90%;
                             height: 60%;
                             img{
                                 width: 32px;
@@ -115,6 +118,10 @@ body{
                     .chats{
                         width: 100%;
                         padding: 10px;
+                        position: relative;
+                        animation-name: chats;
+                        animation-duration: 2s;
+                        animation-timing-function: ease-in;
                         .chat{
                             list-style: none;
                             list-style-position: inside;
@@ -186,18 +193,22 @@ body{
                         }
                         .message{
                             background-color: $white;
+                            border: 1px solid$white;
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
                             padding: 5px 5px 5px 20px;
                             border-radius: 40px;
-                            bottom: 0;
     
                             span{
                                 color: $very-dark-desaturated-violet;
                                 font-size: 36px;
                             }
                         }
+                    }
+                    @keyframes chats {
+                        0%{left: -100%;}
+                        100%{left: 0;}
                     }
                 }
             }
@@ -206,16 +217,34 @@ body{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            position: relative;
+            animation-name: heading;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
             header{
                 h1{
                     color: $very-dark-desaturated-violet;
-                     font-weight: $bold;
+                    font-weight: $bold;
+                    position: relative;
+                    transition-property: all;
+                    transition-duration: 1s;
+                    transition-timing-function: ease-out;
+                    transition-delay: 2s;
+                    
+
+                    &:hover, &:focus{
+                        bottom: 5px;
+                    }
                 }
                 p{
                     color: $dark-grayish-violet;
                                 
                 }
             }
+        }
+        @keyframes heading{
+            0%{right: -50%;}
+            100%{right: 0;}
         }
     }
 }
@@ -444,33 +473,3 @@ body{
         }
     }
 }
-// .main-wrapper{
-//     width: 100%;
-//     height: 97vh;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: stretch;
-
-//     .chat-wrapper{
-//         width: 50%;
-//         background: linear-gradient($light-magenta, $light-violet);
-//         background-size: 50%, 80%;
-//     }
-//     .text-wrapper{
-//         width: 50%;
-//         display: flex;
-//         flex-direction: column;
-//         justify-content: center;
-//         header{
-//             width: 50%;
-//             h1{
-//                 color: $very-dark-desaturated-violet;
-//                 font-weight: $bold;
-//             }
-//             p{
-//                 color: $dark-grayish-violet;
-//             }
-//         }
-
-//     }
-// }
