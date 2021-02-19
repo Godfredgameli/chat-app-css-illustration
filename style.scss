@@ -34,9 +34,11 @@ body{
     font-size: 16px;
     background-color:snow;
 }
+/*Main container wrapper*/
 .main-wrapper{
     height: 1200px;
     .row{
+        /*Mobile wrapper*/
         .chat-wrapper{
             display: flex;
             justify-content: space-between;
@@ -49,23 +51,20 @@ body{
                 width: 55%;
             }
             .chat-container{
-                width: 50%;
+                width: 40%;
                 margin-left: 45%;
                 position: relative;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-
-                .chat-conversation{
+                /*Mobile container*/
+                .mobile{
                     height: 70%;
                     border: 10px solid $white;
                     box-shadow: 10px 30px 40px 10px $grayish-blue;
                     background-color: $light-grayish-violet;
                     border-radius: 20px;
                     z-index: 1;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
                     .white-panel{
                         width: 40%;
                         height: 20px;
@@ -213,6 +212,7 @@ body{
                 }
             }
         }
+        /*Introduction container*/
         .text-wrapper{
             display: flex;
             flex-direction: column;
@@ -324,7 +324,7 @@ body{
             .chat-wrapper{
                 
                 .chat-container{
-                    .chat-conversation{
+                    .mobile{
                         .chats{
                             .rates{
                                 .charge{
@@ -387,7 +387,7 @@ body{
                     margin-left: 10% !important;
                     margin: 0 5%;
 
-                    .chat-conversation{
+                    .mobile{
                         .chats{
                             .rates{
                                 .charge{
